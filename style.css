@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+.container {
+  min-width: 500px;
+}
+.latest-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-jobs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: white;
+  width: 90vw;
+  transition: all 0.3s;
+}
+.list-jobs:hover {
+  transition: all 0.3s;
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.list-jobs p {
+  flex: 1;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex: 1;
+}
+.bold {
+  font-weight: bold;
+}
+@media (max-width: 554px) {
+  body {
+    padding: 5px;
+  }
+  .sale {
+    display: none;
+  }
+}
